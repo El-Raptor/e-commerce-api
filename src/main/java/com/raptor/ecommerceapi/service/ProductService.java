@@ -16,11 +16,11 @@ public class ProductService {
         this.productRepo = productRepo;
     }
 
-    public List<Product> findAll() {
+    public List<Product> getProducts() {
         return productRepo.findAll();
     }
 
-    public Product findById(int id) {
+    public Product getProductById(int id) {
         return productRepo.findById(id).orElse(null);
     }
 }
